@@ -1,0 +1,26 @@
+{
+  "name": "wasm-fourier",
+  "version": "0.1.0",
+  "description": "Fourier transform of mic audio using Rust and WebAssembly",
+  "main": "index.js",
+  "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    "build": "webpack --config webpack.config.js",
+    "start": "webpack-dev-server"
+  },
+  "license": "(MIT OR Apache-2.0)",
+  "homepage": "https://linanova.github.io/wasm-fourier",
+  "dependencies": {
+    "@linanova/fourier": "^0.1.0",
+    "d3": "^5.14.2"
+  },
+  "devDependencies": {
+    "copy-webpack-plugin": "^5.0.0",
+    "gh-pages": "^2.2.0",
+    "hello-wasm-pack": "^0.1.0",
+    "webpack": "^4.29.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
